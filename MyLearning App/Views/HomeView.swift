@@ -24,15 +24,25 @@ struct HomeView: View {
                         
                         ForEach(model.modules) { module in
                             
-                            VStack (spacing: 20){
-                                // Learning Card
-                                HomeViewRow(cardImage: module.content.image, cardTitle: "Learn \(module.category)", cardDescription: module.content.description, cardCount: "\(module.content.lessons.count) lessons", cardTime: module.content.time)
+                            VStack (spacing: 20) {
+                                
+                                NavigationLink(
+                                    destination: ContentView()
+                                        .onAppear(perform: {
+                                            model.beginModule(module.id)
+                                        }),
+                                    label: {
+                                        
+                                        // Learning Card
+                                        HomeViewRow(cardImage: module.content.image, cardTitle: "Learn \(module.category)", cardDescription: module.content.description, cardCount: "\(module.content.lessons.count) lessons", cardTime: module.content.time)
+                                    })
                                 
                                 // Test Card
                                 HomeViewRow(cardImage: module.test.image, cardTitle: "\(module.category) Test", cardDescription: module.test.description, cardCount: "\(module.test.questions.count) questions", cardTime: module.test.time)
                             }
                         }
                     }
+                    .accentColor(.black)
                     .padding()
                 }
                 .navigationTitle("Get Started")
