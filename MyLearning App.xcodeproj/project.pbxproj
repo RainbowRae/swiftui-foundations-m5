@@ -12,6 +12,9 @@
 		3C237D0B28BF986400413E4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C237D0A28BF986400413E4F /* Assets.xcassets */; };
 		3C237D0E28BF986400413E4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C237D0D28BF986400413E4F /* Preview Assets.xcassets */; };
 		3C237D1A28BF9A5200413E4F /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C237D1928BF9A5200413E4F /* ContentModel.swift */; };
+		3C4057C528C77EF800A687D9 /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4057C428C77EF800A687D9 /* ContentDetailView.swift */; };
+		3C4057C928C7AC3C00A687D9 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4057C828C7AC3C00A687D9 /* AVKit.framework */; };
+		3C4057CB28C7AD6900A687D9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4057CA28C7AD6900A687D9 /* Constants.swift */; };
 		3C53807428BFDA3400000055 /* style.html in Resources */ = {isa = PBXBuildFile; fileRef = 3C53807228BFDA3400000055 /* style.html */; };
 		3C53807528BFDA3400000055 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C53807328BFDA3400000055 /* data.json */; };
 		3C5EC75928C4FD7800F9198B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5EC75828C4FD7800F9198B /* ContentView.swift */; };
@@ -28,6 +31,10 @@
 		3C237D0A28BF986400413E4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C237D0D28BF986400413E4F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3C237D1928BF9A5200413E4F /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		3C4057C428C77EF800A687D9 /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
+		3C4057C628C7AC0000A687D9 /* MyLearning-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MyLearning-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		3C4057C828C7AC3C00A687D9 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		3C4057CA28C7AD6900A687D9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3C53807228BFDA3400000055 /* style.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = style.html; sourceTree = "<group>"; };
 		3C53807328BFDA3400000055 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		3C5EC75828C4FD7800F9198B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C4057C928C7AC3C00A687D9 /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +61,7 @@
 			children = (
 				3C237D0528BF986300413E4F /* MyLearning App */,
 				3C237D0428BF986300413E4F /* Products */,
+				3C4057C728C7AC3C00A687D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +76,7 @@
 		3C237D0528BF986300413E4F /* MyLearning App */ = {
 			isa = PBXGroup;
 			children = (
+				3C4057C628C7AC0000A687D9 /* MyLearning-App-Info.plist */,
 				3C237D0628BF986300413E4F /* MyLearningApp.swift */,
 				3C237D1428BF996C00413E4F /* Views */,
 				3C237D1528BF997500413E4F /* ViewModels */,
@@ -94,6 +104,7 @@
 				3CD22AF128C37FEE00C0FA6F /* HomeViewRow.swift */,
 				3C5EC75828C4FD7800F9198B /* ContentView.swift */,
 				3C5EC75A28C52F3A00F9198B /* ContentViewRow.swift */,
+				3C4057C428C77EF800A687D9 /* ContentDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -111,8 +122,17 @@
 			children = (
 				3C53807328BFDA3400000055 /* data.json */,
 				3C53807228BFDA3400000055 /* style.html */,
+				3C4057CA28C7AD6900A687D9 /* Constants.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		3C4057C728C7AC3C00A687D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C4057C828C7AC3C00A687D9 /* AVKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		3CD22AF328C3874500C0FA6F /* Helpers */ = {
@@ -207,6 +227,8 @@
 				3CD22AF528C3876400C0FA6F /* Helpers.swift in Sources */,
 				3C5EC75928C4FD7800F9198B /* ContentView.swift in Sources */,
 				3CD22AF228C37FEE00C0FA6F /* HomeViewRow.swift in Sources */,
+				3C4057C528C77EF800A687D9 /* ContentDetailView.swift in Sources */,
+				3C4057CB28C7AD6900A687D9 /* Constants.swift in Sources */,
 				3C237D0728BF986300413E4F /* MyLearningApp.swift in Sources */,
 				3C5EC75B28C52F3A00F9198B /* ContentViewRow.swift in Sources */,
 				3C237D1A28BF9A5200413E4F /* ContentModel.swift in Sources */,
@@ -342,6 +364,7 @@
 				DEVELOPMENT_TEAM = G26F4RAC36;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MyLearning-App-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -371,6 +394,7 @@
 				DEVELOPMENT_TEAM = G26F4RAC36;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MyLearning-App-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
